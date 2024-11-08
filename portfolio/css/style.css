@@ -134,7 +134,7 @@ img {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #dce8f3;
+  background-color: #333;
 }
 
 .gnav-item a:hover:after {
@@ -166,29 +166,6 @@ img {
 /*--------------------------------
  Works
 ---------------------------------*/
-.works{
-  position: relative;
-}
-.works::before{
-  content: "";
-  background: #7d7d7d;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 30%;
-  z-index: -1;
-}
-.works::after{
-  content: "";
-  background: #7d7d7d;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 70%;
-  height: 30%;
-  z-index: -1;
-}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -265,27 +242,12 @@ img {
 /*--------------------------------
  About
 ---------------------------------*/
-.about{
-  position: relative;
-}
-.about::after{
-  content: "";
-  background: #F5F5F5;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 35%;
-  height: 35%;
-  z-index: -1;
-}
 .profile {
   display: flex;
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
-  position: relative;
 }
-
 .profile-img {
   width: 20%;
   margin-right: 30px;
@@ -296,24 +258,16 @@ img {
 }
 .profile-body {
   flex: 1;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 25px 30px;
 }
 
 .profile-body p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.8;
-  color: #333;
-}
-.profile-body p:nth-child(1) {
-  font-size: 24px;
 }
 
 .profile-body p:not(:last-child) {
   margin-bottom: 30px;
 }
-
-
 
 /*--------------------------------
  Contact
@@ -329,6 +283,8 @@ img {
 .contact-text {
   margin-top: 10px;
 }
+
+
 /*--------------------------------
  ページトップ
 ---------------------------------*/
@@ -591,3 +547,37 @@ img {
     margin-bottom: 20px;
   }
 }
+
+/*追記*/
+form{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.6rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #333;
+}
+
+input[type=submit]{
+  background: #1ca9e3;
+  width: 180px;
+}
+
+textarea{
+  height: 150px;
+}
+
+input::placeholder{
+  color: #666;
+} 
+textarea::placeholder{
+  color: #666;
+}
+/*追記ここまで*/
